@@ -5,7 +5,7 @@ import {
   AccordionPanel,
   AccordionIcon,
   Box,
-} from "@chakra-ui/react";
+} from "@chakra-ui/react"; // chakra라는 UI를 불러옴
 
 function App() {
   // 2. Wrap ChakraProvider at the root of your app
