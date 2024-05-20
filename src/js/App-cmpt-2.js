@@ -7,6 +7,6 @@ function MyComponent(props) {
     </>
   );
 }
-MyComponent.defaultProps = { name: "인천대학교" };
+MyComponent.defaultProps = { name: "인천대학교" }; // 디폴트값 설정
 
 export default MyComponent;

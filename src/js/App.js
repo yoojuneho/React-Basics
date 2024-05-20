@@ -1,43 +1,27 @@
-function WebFrontend() {
+import Avatar from "./Avatar.js";
+
+function Card({ children }) {
   return (
-    <article>
-      <h2>Modern Web</h2>
-      <ol>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>Nginx</li>
-      </ol>
-    </article>
+    <div>
+      <div className="card1">
+        <h1>Modern Web Class</h1>
+      </div>
+      <div className="card2">{children}</div>
+      <div className="card3">{children}</div>
+    </div>
   );
 }
 
-function WebBackend() {
+export default function Profile() {
   return (
-    <article>
-      <h2> Web Backend</h2>
-      <ol>
-        <li>Golang</li>
-        <li>Web Framework</li>
-        <li>Using Blockchain API</li>
-      </ol>
-    </article>
-  );
-}
-
-function BackendTrack() {
-  return (
-    <article>
-      <WebFrontend />
-      <WebBackend />
-    </article>
-  );
-}
-
-export default function Dweb() {
-  return (
-    <section>
-      <h1>Dweb Cource</h1>
-      <BackendTrack />
-    </section>
+    <Card>
+      <Avatar
+        size={100}
+        person={{
+          name: "Katsuko Saruhashi",
+          imageId: "YfeOqp2",
+        }}
+      />
+    </Card>
   );
 }
